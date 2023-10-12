@@ -2,11 +2,21 @@
 <html>
 <head>
     <title>Canadian Universities Ranking</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h1>Canadian Universities Ranking</h1>
-    <div id="visualization"></div>
+    <select id="category-select">
+        <option value="all">All Categories</option>
+        <option value="ai">Artificial intelligence</option>
+        <option value="system">Systems</option>
+        <option value="theory">Theory</option>
+        <option value="inter">Interdisciplinarity</option>
+    </select>
+    <div id="visualization">
+        <!-- The top 10 universities will be displayed here -->
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
