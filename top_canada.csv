@@ -1,17 +1,17 @@
-﻿school,all_ranking,all_count,all_faculty,ai_ranking,ai_count,ai_faculty,system_ranking,system_count,system_faculty,theory_ranking,theory_count,theory_faculty,inter_ranking,inter_count,inter_faculty
-University of Toronto,1,8.2,99,1,22.3,56,2,4,36,2,10.2,12,1,12.2,45
-University of Waterloo,2,6.8,93,2,19.5,43,1,4.9,48,1,10.8,22,3,4.6,19
-University of British Columbia,3,4.3,60,4,13.5,30,3,3.1,27,7,2.2,7,2,4.7,25
-Simon Fraser University,4,3.9,51,6,11.4,32,4,2.6,16,4,2.6,4,4,4.5,26
-McGill University,5,2.5,24,7,5.6,15,6,1.3,5,3,3.3,6,5,3.7,12
-University of Alberta,6,2.2,43,3,16.2,36,,,,8,1.6,3,9,1.7,10
-University of Montreal,7,1.9,27,5,11.7,20,,,,9,1.4,4,,,
-Carleton University,8,1.7,17,9,3.6,5,6,1.3,8,9,1.4,3,9,1.7,4
-University of Victoria,8,1.7,21,,,,6,1.3,8,6,2.3,4,7,2.2,7
-York University,10,1.6,20,8,4.5,12,6,1.3,6,,,,,,
-University of Ottawa,,,,9,3.6,9,,,,,,,,,
-Concordia University,,,,,,,5,1.4,9,,,,,,
-Dalhousie University,,,,,,,10,1.2,3,,,,,,
-Université de Sherbrooke,,,,,,,,,,4,2.6,3,,,
-University of Calgary,,,,,,,,,,9,1.4,1,6,2.5,16
-University of Manitoba,,,,,,,,,,,,,8,1.9,5
+﻿school,all_ranking,all_count,all_faculty,ai_ranking,ai_count,ai_faculty,system_ranking,system_count,system_faculty,theory_ranking,theory_count,theory_faculty,inter_ranking,inter_count,inter_faculty,location,founded,enrollment,logo
+UofT,1,8.2,99,1,22.3,56,2,4,36,2,10.2,12,1,12.2,45,Toronto,1827,"61,690",https://www.logo.wine/a/logo/University_of_Toronto/University_of_Toronto-Logo.wine.svg
+UWaterloo,2,6.8,93,2,19.5,43,1,4.9,48,1,10.8,22,3,4.6,19,Waterloo,1957,"38,166",https://uwaterloo.ca/brand/sites/ca.brand/files/universityofwaterloo_logo_vert_rgb.png
+UBC,3,4.3,60,4,13.5,30,3,3.1,27,7,2.2,7,2,4.7,25,Vancouver,1908,"72,585",https://seeklogo.com/images/U/university-of-british-columbia-logo-F4496C20CA-seeklogo.com.png
+Simon Fraser,4,3.9,51,6,11.4,32,4,2.6,16,4,2.6,4,4,4.5,26,Burnaby,1965,"37,670",https://www.sfu.ca/content/sfu/communicators-toolkit/brand/guidelines/logos/logo-types/jcr:content/main_content/image_1142589382.img.2000.high.png/1687993332756.png
+McGill,5,2.5,24,7,5.6,15,6,1.3,5,3,3.3,6,5,3.7,12,Montreal,1821,"34,840",https://studyarchitecture.com/wp-content/uploads/mcgill-university-logo-png-transparent-cropped.png
+UAlberta,6,2.2,43,3,16.2,36,,,,8,1.6,3,9,1.7,10,Edmonton,1908,"40,061",https://www.ualberta.ca/media-library/ualberta/homepage/university-of-alberta-logo.jpg
+Montreal,7,1.9,27,5,11.7,20,,,,9,1.4,4,,,,Montreal,1878,"67,559",https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Universite_de_Montreal_logo.svg/2560px-Universite_de_Montreal_logo.svg.png
+Carleton,8,1.7,17,9,3.6,5,6,1.3,8,9,1.4,3,9,1.7,4,Ottawa,1942,"31,409",https://carleton.ca/brand/wp-content/uploads/brand-logo-800w-1.jpg
+UVic,8,1.7,21,,,,6,1.3,8,6,2.3,4,7,2.2,7,Victoria,1963,"22,020",https://www.uvic.ca/brand/assets/images/graphics/misc/UVic-mark.jpg
+York,10,1.6,20,8,4.5,12,6,1.3,6,,,,,,,Toronto,1959,"55,700",https://www.yorku.ca/wp-content/themes/york2020/images/yorku-logo.jpg
+Ottawa,,,,9,3.6,9,,,,,,,,,,Ottawa,1848,"47,898",https://researchimpact.ca/wp-content/uploads/uottawa_hor_black.png
+Concordia,,,,,,,5,1.4,9,,,,,,,Montreal,1974,"45,056",https://www.concordia.ca/content/dam/common/logos/Concordia-logo.jpeg
+Dalhousie,,,,,,,10,1.2,3,,,,,,,Halifax,1818,"20,217",https://dal.ca/content/dam/dalhousie/images/about/DAL_LogoHorz_RGB_Wingtip.png.lt_190cfbab027f71f7beb035c02c4e4003.res/DAL_LogoHorz_RGB_Wingtip.png
+Sherbrooke,,,,,,,,,,4,2.6,3,,,,Sherbrooke,1954,"35,000",https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Universit%C3%A9_de_Sherbrooke_%28logo%29.svg/2560px-Universit%C3%A9_de_Sherbrooke_%28logo%29.svg.png
+UofC,,,,,,,,,,9,1.4,1,6,2.5,16,Calgary,1966,"35,000",https://www.ucalgary.ca/sites/default/files/styles/ucws_image_desktop/public/2023-03/UCalgary-horizontal-logo_2.png?itok=Zrx8d1tc
+Manitoba,,,,,,,,,,,,,8,1.9,5,Winnipeg,1877,"29,844",https://umanitoba.ca/sites/default/files/2022-10/UM-logo-horizontal-black.png
