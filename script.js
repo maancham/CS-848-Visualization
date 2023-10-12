@@ -35,18 +35,11 @@ function createBubbleChart(data, category) {
       .attr("fill", function(d) { return colorScale(d.school); })
       .attr("class", "bubble")
       .on("mouseover", function(event, d) {
-        // Make the circle larger on hover
-        d3.select(this)
-          .transition()
-          .attr("r", 60);
-        // Others become grayish
+
         circles.transition().style("opacity", 0.5);
         var tooltip = d3.select("body").append("div")
           .attr("class", "tooltip")
           .style("display", "none");
-        d3.select(this)
-          .transition()
-          .attr("r", 60);
 
         tooltip.html(
           `<strong>${d.school}</strong><br>Ranking: ${d[category + "_ranking"]}<br>Count: ${d[category + "_count"]}<br>Faculty: ${d[category + "_faculty"]}`)
@@ -56,8 +49,6 @@ function createBubbleChart(data, category) {
       })
       .on("mouseout", function() {
         // Restore the circle size
-        d3.select(this)
-          .attr("r", function(d) { return radiusScale(12 - 2*+d[category + "_ranking"]); });
         
         circles.transition().style("opacity", 1);
 
@@ -121,3 +112,6 @@ document
   });
 
 updateVisualization("all");
+
+
+// python -m http.server
