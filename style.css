@@ -25,3 +25,17 @@ h1 {
 .category-info {
     font-size: 14px;
 }
+
+
+#bubble-chart {
+    text-align: center;
+}
+
+.tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
