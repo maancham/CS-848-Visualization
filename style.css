@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#category-select {
+    display: block;
+    margin: 10px auto;
+}
+
+.university {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+}
+
+.university-name {
+    font-weight: bold;
+}
+
+.category-info {
+    font-size: 14px;
+}

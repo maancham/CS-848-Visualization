@@ -2,20 +2,33 @@
 function updateVisualization(category) {
   d3.csv("top_canada.csv")
     .then(function (data) {
-      data.sort(function (a, b) {
+      var filteredData = data.filter(function (d) {
+        return (
+          d[category + "_ranking"] !== "" &&
+          d[category + "_ranking"] !== undefined
+        );
+      });
+
+      filteredData.sort(function (a, b) {
         return +a[category + "_ranking"] - +b[category + "_ranking"];
       });
 
-      var top10Universities = data.slice(0, 10);
+      var top10Universities = filteredData.slice(0, 10);
+
       var visualization = document.getElementById("visualization");
       visualization.innerHTML = "";
 
       top10Universities.forEach(function (university) {
         var universityElement = document.createElement("div");
-        universityElement.textContent =
-          university.school +
-          " - Ranking: " +
-          university[category + "_ranking"];
+        universityElement.classList.add("university");
+        universityElement.innerHTML = `
+            <div class="university-name">${university.school} - Ranking: ${
+          university[category + "_ranking"]
+        }</div>
+            <div class="category-info">Count: ${
+              university[category + "_count"]
+            } - Faculty: ${university[category + "_faculty"]}</div>
+        `;
         visualization.appendChild(universityElement);
       });
     })
