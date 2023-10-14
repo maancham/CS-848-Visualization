@@ -29,7 +29,9 @@ h1 {
 
 #bubble-chart {
     text-align: center;
+    width:80%
 }
+
 
 .tooltip {
     position: absolute;

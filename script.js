@@ -1,9 +1,9 @@
 function createBubbleChart(data, category) {
   var screenWidth = window.innerWidth;
 
-  var width = screenWidth * 0.7;
+  var width = screenWidth;
   var height = 200;
-  var centerX = width / 5;
+  var centerX = width / 6;
 
   d3.select("#bubble-chart").selectAll("svg").remove();
 
@@ -13,11 +13,11 @@ function createBubbleChart(data, category) {
 
   var radiusScale = d3.scaleSqrt()
       .domain([0, d3.max(data, function(d) { return +d[category + "_ranking"]; })])
-      .range([10, 40]);
+      .range([10, 42]);
 
   var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+  // var colorScale = d3.color("steelblue");
 
-  var infoBox = document.getElementById("info-box");
   var uniLogo = document.getElementById("uni-logo");
   var uniName = document.getElementById("uni-name");
   var uniLocation = document.getElementById("uni-location");
@@ -29,15 +29,19 @@ function createBubbleChart(data, category) {
       .enter()
       .append("circle")
       .attr("cx", function(d, i) {
-        return centerX + i * 100; // Adjust the spacing between circles
+        console.log(d, i)
+        return centerX  + i * 110; // Adjust the spacing between circles
       })
       .attr("cy", height / 2)
-      .attr("r", function(d) { return radiusScale(20 - 2*+d[category + "_ranking"]); })
-      .attr("fill", function(d) { return colorScale(d.school); })
+      .attr("r", function(d) { return radiusScale(20 - 1.2*+d[category + "_ranking"]); })
+      .attr("fill", function(d) { return d3.color("#3498db"); })
       .attr("class", "bubble")
+      .style("cursor", "pointer")
       .on("mouseover", function(event, d) {
 
+        var circle = d3.select(this);
         circles.transition().style("opacity", 0.5);
+        circle.transition().style("opacity", 1);
         var tooltip = d3.select("body").append("div")
           .attr("class", "tooltip")
           .style("display", "none");
@@ -74,16 +78,18 @@ function createBubbleChart(data, category) {
       .enter()
       .append("text")
       .attr("x", function(d, i) {
-        return centerX + i * 100; // Adjust the spacing between circles
+        return centerX + i * 110; // Adjust the spacing between circles
       })
       .attr("y", height / 2)
       .text(function(d) {
         return d.school;
       })
       .attr("class", "label")
-      .style("font-size", "10px")
+      .style("font-size", "12px")
+      .style("font-weight", "bold")
       .style("text-anchor", "middle")
       .style("alignment-baseline", "middle")
+      .style("fill", "#ffffff")
       .style("pointer-events", "none");
     
 }
@@ -125,3 +131,4 @@ updateVisualization("all");
 
 
 // python -m http.server
+// todos: / underline small html disclaimer // deploy
